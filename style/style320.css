@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html  {
+  font-size: 62.5%;
+}
+body  {
+  background-color: rgb(218, 218, 218);
+}
+.appCalculator  {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+}
+.appCalculator button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 24vh;
+  right: 4.5vw;
+}
+.formGrid  {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 18vh 14vh repeat(5, 12vh);
+  grid-template-areas: 'centerF centerF centerF centerF'
+                       'secondF secondF secondF secondF'
+                       'ac parenthesis percentage division'
+                       'seven eight nine multiplication'
+                       'four five six subtraction'
+                       'one two three addition'
+                       'zero zero point equal';
+}
+.generic  {
+  border: none;
+  place-self: center;
+  font-size: 2.6rem;
+}
+.white  {
+  width: 23vw;
+  height: 11vh;
+  background-color: white;
+  border-radius: 10%;
+}
+.whiteZero  {
+  width: 48vw;
+  height: 11vh;
+  background-color: white;
+  border-radius: 6%;
+}
+.orange  {
+  width: 23vw;
+  height: 11vh;
+  background-color: rgb(253, 148, 39);
+  border-radius: 10%;
+}
+
+#centerField  {
+  background-color: rgb(218, 218, 218);
+  padding-right: 6px;
+  border: none;
+  font-size: 4rem;
+  text-align: end;
+  grid-area: centerF;
+}
+#secondField {
+  background-color: rgb(218, 218, 218);
+  padding-right: 6px;
+  border: none;
+  text-align: end;
+  align-self: start;
+  grid-area: secondF;
+}
+#centerField:focus, #secondField:focus  {
+  outline: 0;
+}
+#zero {
+  grid-area: zero;
+}
+#one {
+  grid-area: one;
+}
+#two {
+  grid-area: two;
+}
+#three {
+  grid-area: three;
+}
+#four {
+  grid-area: four;
+}
+#five {
+  grid-area: five;
+}
+#six {
+  grid-area: six;
+}
+#seven {
+  grid-area: seven;
+}
+#eight {
+  grid-area: eight;
+}
+#nine {
+  grid-area: nine;
+}
+#point {
+  grid-area: point;
+}
+#ac {
+  grid-area: ac;
+}
+#parenthesis {
+  grid-area: parenthesis;
+}
+#division {
+  grid-area: division;
+}
+#percentage {
+  grid-area: percentage;
+}
+#multiplication {
+  grid-area: multiplication;
+}
+#addition {
+  grid-area: addition;
+}
+#subtraction {
+  grid-area: subtraction;
+}
+#equal {
+  grid-area: equal;
+}
